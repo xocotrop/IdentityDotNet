@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using IdentityDotNet.MvcClient.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication;
 
 namespace IdentityDotNet.MvcClient.Controllers
 {
@@ -24,6 +26,12 @@ namespace IdentityDotNet.MvcClient.Controllers
         public IActionResult Secure()
         {
             return View();
+        }
+
+        public async Task Logout()
+        {
+            await HttpContext.SignOutAsync("Cookies");
+            await HttpContext.SignOutAsync("oidc");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

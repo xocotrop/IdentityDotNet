@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -39,13 +40,13 @@ namespace IdentityDotNet.MvcClient
                 opts.DefaultScheme = "Cookies";
                 opts.DefaultChallengeScheme = "oidc";
             })
-            .AddCokkie("Cookies")
+            .AddCookie("Cookies")
             .AddOpenIdConnect("oidc", opts =>
             {
                 opts.SignInScheme = "Cookies";
                 opts.Authority = "http://localhost:5000";
-                opts.RequireHttpsMetada = false;
-                opts.ClienteId = "mvc";
+                opts.RequireHttpsMetadata = false;
+                opts.ClientId = "mvc";
                 opts.SaveTokens = true;
             });
         }

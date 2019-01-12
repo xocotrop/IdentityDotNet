@@ -20,6 +20,7 @@ namespace IdentityDotNet.IdentitySvr
 
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
+                .AddInMemoryIdentityResources(Config.GetIdentityResources())
                 .AddInMemoryApiResources(Config.GetAllApiResources())
                 .AddInMemoryClients(Config.GetClients())
                 .AddTestUsers(Config.GetUserTests());

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityDotNet.IdentitySvr"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityDotNet.ConsoleClient", "IdentityDotNet.ConsoleClient\IdentityDotNet.ConsoleClient.csproj", "{14EB9E71-D219-4F9F-80D2-CD65BA138EE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityDotNet.MvcClient", "IdentityDotNet.MvcClient\IdentityDotNet.MvcClient.csproj", "{809701C6-F815-4448-A67A-E91C9360F707}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{14EB9E71-D219-4F9F-80D2-CD65BA138EE6}.Release|x64.Build.0 = Release|Any CPU
 		{14EB9E71-D219-4F9F-80D2-CD65BA138EE6}.Release|x86.ActiveCfg = Release|Any CPU
 		{14EB9E71-D219-4F9F-80D2-CD65BA138EE6}.Release|x86.Build.0 = Release|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Debug|x64.Build.0 = Debug|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Debug|x86.Build.0 = Debug|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Release|x64.ActiveCfg = Release|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Release|x64.Build.0 = Release|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Release|x86.ActiveCfg = Release|Any CPU
+		{809701C6-F815-4448-A67A-E91C9360F707}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
